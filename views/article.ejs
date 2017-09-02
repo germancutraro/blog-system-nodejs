@@ -1,0 +1,14 @@
+<% include partials/head %>
+<body>
+  <% include partials/nav %>
+  <div class="container">
+    <h1 class="article-title"><%= post.title %></h1>
+    <h4 class="article-date"><%= post.time %></h4>
+    <h5 class="author"> by <%= post.creator %></h5>
+    <p class="article-image"><img src="https://cdn-images-1.medium.com/max/800/1*YjkUtlh4WjnNsXFrzpfzoA.png" alt=""></p>
+    <div class="article-content-wrapper">
+      <p class="article-content"><%= post.content %></p>
+    </div>
+  </div>
+</body>
+</html>

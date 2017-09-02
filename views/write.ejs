@@ -1,0 +1,16 @@
+<% include partials/head %>
+<body>
+  <h1 class="title">Simple Blog using NodeJs</h1>
+  <h5 class="author"> by germancutraro</h5>
+  <% include partials/nav %>
+  <div class="container">
+    <form action="/create" method="POST" enctype="multipart/form-data">
+      <input type="text" name="title" placeholder="Post title" required autofocus="on" minlength="4"/>
+      <textarea name="content" name="content" placeholder="Post Content..." required minlength="30"></textarea>
+      <input type="file" name="image" required/>
+      <input type="text" name="name" placeholder="Your name" required minlength="4"/>
+      <input type="submit" value="Publish" />
+    </form>
+  </div>
+</body>
+</html>

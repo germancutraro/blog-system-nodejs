@@ -1,0 +1,19 @@
+<% include partials/head %>
+<body>
+  <h1 class="title">Simple Blog using NodeJs</h1>
+  <h5 class="author"> by germancutraro</h5>
+  <% include partials/nav %>
+  <div class="container">
+    <% posts.forEach( post => { %>
+    <a href="article/<%= post.title %>">
+       <div class="post">
+        <h1 class="post-title"><%= post.title %></h1>
+        <p class="post-image"><img src="/public/assets/uploads/<%= post.image %>" alt="" width="626" height="335"}></p>
+        <p class="post-time"><small>Posted in: <%= post.time %></small></p>
+        <p class="post-prev"><%= post.content.substring(0, 233)  %>...</p>
+       </div>
+     </a>
+    <% }); %>
+  </div>
+</body>
+</html>
