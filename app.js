@@ -4,7 +4,7 @@ const fileUpload = require('express-fileupload');
 // init app
 const app = express();
 
-const {port, engine} = require('./config');
+const {port, engine} = require('./config'); //Es6 Destructuring
 const db = require('./models/db');
 
 // Configuration
